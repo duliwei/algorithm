@@ -1,5 +1,5 @@
 /*直接插入排序*/
-```c
+
 #include <stdio.h>
 void pri();
 int main()
@@ -38,4 +38,4 @@ void pri(int a[], int k)
     }
 	printf("\n\n");
 }
-```
+
