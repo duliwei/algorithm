@@ -1,5 +1,4 @@
 /*直接插入排序*/
-
 #include <stdio.h>
 void pri();
 int main()
@@ -7,8 +6,8 @@ int main()
     int a[]={98,76,109,34,67,190,80,12,14,89,1};
     int k=sizeof(a)/sizeof(a[0]);
     int j;
-	int i=1;
-	pri(a, k);
+    int i=1;
+    pri(a, k);
 
     for(;i<k;i++)
     {
@@ -22,7 +21,7 @@ int main()
 			
             a[j+1]=temp;
         }
-		pri(a, k);
+	pri(a, k);
 		
     }
 	
@@ -31,11 +30,11 @@ int main()
 
 void pri(int a[], int k)
 {
-	int f=0;
+    int f=0;
     for(;f<k;f++)
     {
         printf("%d ", a[f]);
     }
-	printf("\n\n");
+    printf("\n\n");
 }
 
