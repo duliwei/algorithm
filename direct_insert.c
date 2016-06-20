@@ -11,20 +11,17 @@ int main()
 
     for(;i<k;i++)
     {
-        if(a[i]<a[i-1]) 
+        if(a[i]<a[i-1]) //第一个自成序列 从第二个开始比较
         {
             int temp=a[i];
-            for(j=i-1;j>=0 && a[j]>temp;j--)
+            for(j=i-1;j>=0 && a[j]>temp;j--)//将当前和已插入并排序的进行比较 遍历比当前大的
             {
-                a[j+1]=a[j];
+                a[j+1]=a[j];//比当前大的往后移
             }
-			
-            a[j+1]=temp;
+            a[j+1]=temp;//将当前的插入正确位置
         }
 	pri(a, k);
-		
     }
-	
     return 0;
 }
 
@@ -37,4 +34,3 @@ void pri(int a[], int k)
     }
     printf("\n\n");
 }
-
