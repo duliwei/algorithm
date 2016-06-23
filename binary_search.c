@@ -1,3 +1,4 @@
+/*折半查找*/
 #include <stdio.h>
 int binarySearch(int array[], int low, int high, int target)
 {
@@ -16,6 +17,6 @@ int binarySearch(int array[], int low, int high, int target)
 void main()
 {
 	int array[] = {1, 2, 3, 4, 5, 6, 7, 8};
-	int a = binarySearch(array, 1, 9, 7);
-	printf("%d\n", array[a]);
+	int a = binarySearch(array, 0, 7, 6);
+	printf("%d\n", a);
 }
